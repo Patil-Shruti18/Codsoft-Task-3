@@ -1,2 +1,13 @@
 # Codsoft-Task-3
-As i have completed my second task of Codsoft Internship, this is my third task which is Password generator.
+# Password Generator
+
+import random
+import string
+length=int(input("Enter length of your password:"))
+setup=string.ascii_letters+string.punctuation+string.digits
+if (length>0):
+    pwd="".join(random.choice(setup) for i in range(length))
+    print("Your generated Password is:",pwd)
+else:
+    print("Please enter a valid length...(")
+    
